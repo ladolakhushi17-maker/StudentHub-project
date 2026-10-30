@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal - Welcome</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="main-header">
+    <div class="header-left">
+        <div class="portal-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Digital Academic & Campus Management System</p>
+        </div>
+    </div>
+
+    <button id="themeToggle" class="theme-btn" aria-label="Change Theme">
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark Mode</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <section>
+        <h2>Welcome to Student Hub Portal</h2>
+        <p>Your one-stop digital companion for managing attendance, academic assignments, class timetables, and college circulars.</p>
+    </section>
+
+    <div class="user-options" aria-label="Portal sign-in options">
+        <div class="option-card">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Student Portal</h3>
+            <p>Access your personalized attendance records, course modules, assignments, and profile.</p>
+            <a href="Login.html" class="small-btn">Student Sign In</a>
+            <span style="display:block; margin-top:10px; font-size:0.78rem; color:var(--text-muted);"><i class="fa-solid fa-lock"></i> Accounts issued by Academic Office</span>
+        </div>
+
+        <div class="option-card">
+            <h3><i class="fa-solid fa-user-shield"></i> Administration</h3>
+            <p>Authorized access for department chairs, administrative officers, and faculty managers.</p>
+            <a href="admin-login.html" class="small-btn">Administrator Sign In</a>
+            <span style="display:block; margin-top:10px; font-size:0.78rem; color:var(--text-muted);"><i class="fa-solid fa-shield-halved"></i> Role-Based Access Control</span>
+        </div>
+
+        <div class="option-card">
+            <h3><i class="fa-solid fa-circle-info"></i> Campus Information</h3>
+            <p>Explore institutional vision, academic statistics, campus events, and student resources.</p>
+            <a href="#about" class="small-btn">Explore Highlights</a>
+            <span style="display:block; margin-top:10px; font-size:0.78rem; color:var(--text-muted);"><i class="fa-solid fa-building-columns"></i> Campus & Academics</span>
+        </div>
+    </div>
+
+    <!-- About Student Hub Portal Institutional Highlights -->
+    <section class="about-portal-section" id="about" aria-labelledby="about-portal-heading" style="margin-top: 40px;">
+        <h2 id="about-portal-heading" style="margin-bottom: 8px;"><i class="fa-solid fa-circle-info"></i> About Student Hub Portal</h2>
+        <p style="color: var(--text-muted); margin-bottom: 25px;">Engineered to streamline higher education administration, foster student success, and unify academic workflows into a secure digital campus ecosystem.</p>
+
+        <div class="user-options" style="margin-bottom: 25px;">
+            <div class="option-card">
+                <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                <p>Deliver an accessible, real-time academic platform connecting students, faculty, and administrators with zero friction and enterprise-grade data protection.</p>
+            </div>
+            <div class="option-card">
+                <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                <p>Pioneer transparent institutional governance through automated attendance, synchronized course syllabi, interactive events, and verifiable audit records.</p>
+            </div>
+            <div class="option-card">
+                <h3><i class="fa-solid fa-shield-halved"></i> Security First</h3>
+                <p>Multi-tier Role-Based Access Control (RBAC), Bcrypt credential hashing, prepared statements, and session protection compliant with WCAG 2.1 AA accessibility.</p>
+            </div>
+        </div>
+
+        <div class="stat-banner" style="background: var(--card-bg); border-radius: 12px; padding: 25px 20px; margin-bottom: 25px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; text-align: center; border: 1px solid var(--border-color); box-shadow: var(--shadow);">
+            <div class="stat-item">
+                <h4 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 4px; font-weight: 800;">15,000+</h4>
+                <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Active Students</span>
+            </div>
+            <div class="stat-item">
+                <h4 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 4px; font-weight: 800;">450+</h4>
+                <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Faculty Mentors</span>
+            </div>
+            <div class="stat-item">
+                <h4 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 4px; font-weight: 800;">98.4%</h4>
+                <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Digital Attendance</span>
+            </div>
+            <div class="stat-item">
+                <h4 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 4px; font-weight: 800;">120+</h4>
+                <span style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Annual Events</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>StudentHub Portal</h2>
+            <p>Your digital campus companion for academics, courses, assignments, attendance, and student services.</p>
+        </div>
+    </div>
+    <p class="copyright">
+        © 2026 StudentHub Portal | Developed By Hemangi Korat | All Rights Reserved.
+    </p>
+</footer>
+</body>
+</html>

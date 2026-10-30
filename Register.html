@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url=Login.html">
+    <title>Student Registration - Student Hub Portal</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="main-header">
+    <div class="header-left">
+        <div class="portal-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Digital Academic & Campus Management System</p>
+        </div>
+    </div>
+
+    <button id="themeToggle" class="theme-btn" type="button" aria-label="Change Theme">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        <span>Dark Mode</span>
+    </button>
+</header>
+
+<main id="main-content" style="display:flex; justify-content:center; align-items:center; min-height:60vh; padding:20px;">
+    <div class="card" style="max-width:540px; width:100%; padding:35px; text-align:center; background:var(--card-bg, #ffffff); border-radius:14px; box-shadow:var(--shadow); border:1px solid var(--border-color);">
+        <div style="width:72px; height:72px; border-radius:50%; background:var(--primary-light, #eff6ff); color:var(--primary-color, #2563eb); display:grid; place-items:center; font-size:2rem; margin:0 auto 20px;">
+            <i class="fa-solid fa-user-lock"></i>
+        </div>
+        <h2 style="font-size:1.5rem; color:var(--text-color); margin-bottom:12px;">Public Student Registration Closed</h2>
+        <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6; margin-bottom:24px;">
+            In accordance with campus security and academic policy, student accounts are created and provisioned exclusively by the <strong>Academic Administration office</strong> upon admission.
+        </p>
+        <div style="background:var(--primary-light, #eff6ff); border:1px solid var(--border-color); border-radius:8px; padding:14px; margin-bottom:24px; font-size:0.88rem; color:var(--text-color); text-align:left;">
+            <div style="font-weight:600; margin-bottom:6px;"><i class="fa-solid fa-circle-info" style="color:var(--primary-color);"></i> Already enrolled?</div>
+            <div>Use your Student ID (e.g. <code>25CS035</code>) and the temporary password issued by your department to sign in. You will be prompted to set a permanent password upon first login.</div>
+        </div>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a href="Login.html" class="small-btn" style="text-decoration:none; padding:10px 22px; font-size:0.95rem;">
+                <i class="fa-solid fa-right-to-bracket"></i> Go to Student Login
+            </a>
+            <a href="admin-login.html" class="small-btn secondary-action" style="text-decoration:none; padding:10px 20px; font-size:0.95rem; background:transparent; border:1px solid var(--border-color); color:var(--text-color);">
+                <i class="fa-solid fa-user-shield"></i> Admin Login
+            </a>
+        </div>
+        <p style="font-size:0.8rem; color:var(--text-muted); margin-top:20px;">Redirecting to Student Login in 4 seconds...</p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>StudentHub Portal</h2>
+            <p>Your digital campus companion for academics, courses, assignments, attendance, and student services.</p>
+        </div>
+    </div>
+    <p class="copyright">
+        © 2026 StudentHub Portal | Developed By Hemangi Korat | All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

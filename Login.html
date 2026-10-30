@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal - Login</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="main-header">
+    <div class="header-left">
+        <div class="portal-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Digital Academic & Campus Management System</p>
+        </div>
+    </div>
+
+    <button id="themeToggle" class="theme-btn" aria-label="Change Theme">
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark Mode</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <form action="php/auth/login.php" method="POST" id="loginForm" novalidate>
+        <h2><i class="fa-solid fa-right-to-bracket"></i> Student Login</h2>
+        <input type="hidden" name="csrf_token" value="">
+
+        <!-- In-Page Success / Status Message Banner -->
+        <div id="loginStatus" class="success-banner" role="status" aria-live="polite"></div>
+
+        <!-- Evaluator Quick Demo Login Card -->
+        <div class="demo-account-card">
+            <div class="demo-badge">
+                <i class="fa-solid fa-graduation-cap"></i> Evaluator / Demo Student Account
+            </div>
+            <div class="demo-details">
+                <p><strong>Student ID:</strong> <code>25CS035</code></p>
+                <p><strong>Password:</strong> <code>Student@123</code></p>
+                <p class="demo-note"><i class="fa-solid fa-circle-info"></i> Pre-configured active student account for evaluation</p>
+            </div>
+            <button type="button" id="fillStudentDemoBtn" class="demo-login-btn">
+                <i class="fa-solid fa-bolt"></i> Fill Up &amp; Log In
+            </button>
+        </div>
+
+        <div class="form-group">
+            <label for="loginStudentId">
+                Student ID / Username <span class="required-star">*</span>
+            </label>
+            <input type="text" id="loginStudentId" name="studentId" placeholder="Enter Student ID (e.g. 25CS035 or admin)"
+                   required autocomplete="username"
+                   aria-describedby="loginIdError" aria-invalid="false">
+            <span class="error-msg" id="loginIdError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="loginPassword">
+                Password <span class="required-star">*</span>
+            </label>
+            <input type="password" id="loginPassword" name="password" placeholder="Enter Password"
+                   required autocomplete="current-password"
+                   aria-describedby="loginPasswordError" aria-invalid="false">
+            <span class="error-msg" id="loginPasswordError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-actions">
+            <input type="submit" value="Login" id="loginSubmitBtn">
+            <input type="reset" value="Clear Form" id="loginResetBtn">
+        </div>
+
+        <div class="form-links">
+            <a href="forgotpassword.html"><i class="fa-solid fa-key"></i> Forgot Password?</a>
+            <a href="forgotusername.html"><i class="fa-solid fa-user-tag"></i> Forgot Username?</a>
+            <a href="admin-login.html"><i class="fa-solid fa-user-shield"></i> Administrator login</a>
+        </div>
+
+        <div class="admin-notice-card" style="margin-top: 18px; padding: 12px 14px; background: var(--primary-light, #eff6ff); border: 1px solid var(--border-color, #bfdbfe); border-radius: 8px; font-size: 0.85rem; color: var(--text-color); text-align: center; line-height: 1.4;">
+            <i class="fa-solid fa-circle-info" style="color: var(--primary-color);"></i>
+            <strong>Notice for Students:</strong> Self-registration is disabled. Student accounts are issued exclusively by Academic Administration. If you do not have credentials, please contact your department coordinator.
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>StudentHub Portal</h2>
+            <p>Your digital campus companion for academics, courses, assignments, attendance, and student services.</p>
+        </div>
+    </div>
+    <p class="copyright">
+        © 2026 StudentHub Portal | Developed By Hemangi Korat | All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>

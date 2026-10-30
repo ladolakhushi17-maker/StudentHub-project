@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal - Forgot Username</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="main-header">
+    <div class="header-left">
+        <div class="portal-title">
+            <h1>STUDENT HUB PORTAL</h1>
+            <p>Digital Academic & Campus Management System</p>
+        </div>
+    </div>
+
+    <button id="themeToggle" class="theme-btn" aria-label="Change Theme">
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark Mode</span>
+    </button>
+</header>
+
+<main id="main-content">
+    <form action="Process.php" id="forgotUsernameForm" novalidate>
+        <h2><i class="fa-solid fa-user-tag"></i> Forgot Username</h2>
+
+        <!-- In-Page Status Message Banner -->
+        <div id="forgotUsernameStatus" class="success-banner" role="status" aria-live="polite"></div>
+
+        <div class="form-group">
+            <label for="fuEmail">
+                Registered Email <span class="required-star">*</span>
+            </label>
+            <input type="email" id="fuEmail" name="email" placeholder="Enter Registered Email Address"
+                   required autocomplete="email"
+                   aria-describedby="fuEmailError" aria-invalid="false">
+            <span class="error-msg" id="fuEmailError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="fuPhone">
+                Mobile Number <span class="required-star">*</span>
+            </label>
+            <input type="tel" id="fuPhone" name="phone" placeholder="10-digit registered number (e.g. 9876543210)"
+                   required maxlength="10" autocomplete="tel"
+                   aria-describedby="fuPhoneError" aria-invalid="false">
+            <span class="error-msg" id="fuPhoneError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-actions">
+            <input type="submit" value="Find Username" id="fuSubmitBtn">
+            <input type="reset" value="Clear Form" id="fuResetBtn">
+        </div>
+
+        <div class="form-links">
+            <a href="Login.html"><i class="fa-solid fa-arrow-left"></i> Back to Login</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>StudentHub Portal</h2>
+            <p>Your digital campus companion for academics, courses, assignments, attendance, and student services.</p>
+        </div>
+    </div>
+    <p class="copyright">
+        © 2026 StudentHub Portal | Developed By Hemangi Korat | All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
